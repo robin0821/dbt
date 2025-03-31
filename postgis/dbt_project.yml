@@ -22,6 +22,8 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+vars:
+  filters: "'ROXWOOD DOWNS PTY. LTD.', 'CORNISH GROUP INVESTMENTS PTY. LTD.', 'VIKRAMAN PTY. LTD.'"
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
