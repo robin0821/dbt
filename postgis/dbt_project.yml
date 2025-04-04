@@ -37,3 +37,13 @@ models:
     example:
       +materialized: view
     materialized: table
+
+seeds:
+  postgis:
+    +schema: raw_data_staging
+    CONFIG:
+      PARAMETER_EXAMPLE:
+        +persist_docs:
+          relation: false
+          columns: false
+            

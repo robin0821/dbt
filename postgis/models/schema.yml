@@ -1,0 +1,10 @@
+version: 2
+
+source:
+
+  - name: cvms_ha
+    schema: transformations
+    tables:
+      - name: customers1905
+      - name: korean_ha
+      - name: dags_run

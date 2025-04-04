@@ -1,0 +1,20 @@
+RULE_TYPE,FIELD_VALUE,DESCRIPTION
+PRODUCT_FILTER,041,International
+PRODUCT_FILTER,143,International Express
+PARCEL_FILTER,ZPT_EH_ART,Event Handler Type for Articles
+RETURNED_FILTER,INT-0007,Item returned from Customs (Outbound)
+RETURNED_FILTER,INT-0015,Returned to Sender - Item export cancelled due to security reason.
+RETURNED_TO_SENDER,INT-0015,Returned to Sender - Item export cancelled due to security reason.
+RETURNED_FROM_CUSTOM,INT-0007,Item returned from Customs (Outbound)
+LODGED_FILTER,AFC-ER31,Lodged by Sender
+LODGED_FILTER,AFC-ER35,Lodged by Sender (large manifest scan)
+EXTEVENT_FILTER,AFC-ER31,Lodged by Sender
+EXTEVENT_FILTER,AFC-ER35,Lodged by Sender (large manifest scan)
+EXTEVENT_FILTER,ADMIN-ER39,Manifest received from Sender
+EXTEVENT_FILTER,INT-2188,Destination Customs Request for Information
+EXTEVENT_FILTER,INT-2189,Destination Customs Request for Screening
+EXTEVENT_FILTER,INT-2196,Destination Customs Advice Incomplete
+EXTEVENT_FILTER,INT-2197,Destination Customs Advice Error
+EXTEVENT_FILTER,INT-0007,Item returned from Customs (Outbound)
+EXTEVENT_FILTER,INT-0015,Returned to Sender - Item export cancelled due to security reason.
+REPLACE_VALUE_1,AFC-ER35,AFC-ER31

@@ -1,0 +1,12 @@
+version: 2
+
+seeds:
+  - name: PARAMETER_EXAMPLE
+    description: '{{ doc("PARAMETER_EXAMPLE") }}'
+    columns:
+      - name: RULE_TYPE
+        description: Configuration rule type
+      - name: FIELD_VALUE
+        description: Configuration field value
+      - name: DESCRIPTION
+        description: Configuration description
