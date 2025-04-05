@@ -52,5 +52,21 @@
 {{ config(alias='korean_ha_test') }}
 
 SELECT * FROM public.victorian
-where "Last Name" = 'Ha' and "Country of Birth" ilike '{{ return_to_sender[0] }}'
+where "Last Name" in (
+    {%- for product in product_filter -%}
+        {%- if not loop.last -%}
+            '{{ product }}', 
+        {%- else -%}
+            '{{ product }}'
+        {%- endif -%}
+    {%- endfor -%}
+) and "First Name" in (
+    {%- for item in event_filter -%}
+        {%- if not loop.last -%}
+            '{{ item }}', 
+        {%- else -%}
+            '{{ item }}'
+        {%- endif -%}
+    {%- endfor -%}
+)
 order by " Full Name" asc
